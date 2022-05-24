@@ -13,11 +13,18 @@ header {
 .ms_btn {
     background-color: blueviolet;
 }
+section:nth-child(2) {
+    background-color: aqua;
+}
 
 
 /* *COMMON* */
 .ms_container {
     width: 100%;
+}
+section:not(section:first-of-type) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 img {
     width: 100%;
@@ -122,7 +129,7 @@ header {
 /* *MAIN* */
 /* *FIRST JUMBOTRON* */
 .ms_jumbotron .d-flex {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     height: 600px;
 }
 main > section:first-of-type {
@@ -138,6 +145,14 @@ main > section:first-of-type {
     background-position: center;
 } */
 
+/* *MAIN GAMES* */
+.ms_main-games img {
+    border-radius: 1.15rem;
+}
+.ms_main-games img:hover {
+    outline: 3px solid #0070d1;
+    outline-offset: 3px;
+}
 
 /* ?MEDIA QUERIES? */
 /* *MD* */
