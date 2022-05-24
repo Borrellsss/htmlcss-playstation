@@ -22,6 +22,10 @@ section:nth-child(5) {
 .ms_container {
     width: 100%;
 }
+.ms_small-container {
+    margin: 0 auto;
+    max-width: 540px;
+}
 main > section {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -104,7 +108,16 @@ p {
 .ms_card-txt span {
     font-size: 0.9rem
 }
-
+.ms_marks {
+    vertical-align: top;
+}
+.ms_trade-mark {
+    margin-left: -0.15rem;
+}
+.ms_registered-mark {
+    margin-left: -0.5em;
+    font-size: 0.55em;
+}
 /* *HEADER* */
 header {
 }
@@ -203,10 +216,6 @@ main > section:first-of-type {
 .ms_hardware .ms_card-txt {
     text-align: center;
     display: none;
-}
-.ms_trade-mark {
-    margin-left: -0.15rem;
-    vertical-align: top;
 }
 
 /* *SECOND JUMBOTRON* */
