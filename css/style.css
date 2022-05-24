@@ -13,7 +13,7 @@ header {
 .ms_btn {
     background-color: blueviolet;
 }
-section:nth-child(3) {
+section:nth-child(5) {
     background-color: aqua;
 }
 
@@ -35,7 +35,10 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: #0070d1;
+    color: #2d64e6;
+}
+a.ms_btn:hover {
+    color: white;
 }
 ul {
     margin: 0;
@@ -70,6 +73,10 @@ p {
 .ms_btn-orange {
     color: white;
     background-color: #cd3d0f;
+}
+.ms_btn-blue {
+    color: white;
+    background-color: #2d64e6;
 }
 .ms_jumbotron {
     height: 600px;
@@ -162,7 +169,7 @@ main > section:first-of-type {
     border-radius: 1.15rem;
 }
 .ms_main-games img:hover {
-    outline: 3px solid #0070d1;
+    outline: 3px solid #2d64e6;
     outline-offset: 3px;
 }
 
@@ -171,13 +178,35 @@ main > section:first-of-type {
     text-align: center;
 }
 .ms_mt-motto {
-    color: #0070d1;
+    color: #2d64e6;
     text-transform: uppercase;
+}
+
+/* *HARDWARE* */
+.ms_hardware .container-fluid > div:last-of-type .ms_card {
+    height: 100%;
+    opacity: 0.5;
+}
+.ms_hardware .container-fluid > div:last-of-type .ms_card:hover {
+    opacity: 1;
+    box-shadow: 0 3px #2d64e6;
+    cursor: pointer;
+}
+.ms_card-txt {
+    text-align: center;
+    display: none;
+}
+.ms_card-txt span {
+    font-size: 0.9rem
+}
+.ms_trade-mark {
+    margin-left: -0.15rem;
+    vertical-align: top;
 }
 
 /* ?MEDIA QUERIES? */
 /* *MD* */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
     /* *COMMON* */
     .ms_container {
         margin: 0 auto;
@@ -185,6 +214,18 @@ main > section:first-of-type {
     }
     .ms_jumbotron img {
         width: 45%;
+    }
+
+    /* *HARDWARE* */
+    .ms_hardware .container-fluid > div:last-of-type .ms_card {
+        padding: 0 5%;
+    }
+    .ms_card-img {
+        padding: 0 1rem;
+    }
+    .ms_card-txt {
+        padding: 0.5rem 0;
+        display: block;
     }
 }
 
