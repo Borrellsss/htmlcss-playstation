@@ -49,17 +49,23 @@ ul {
     padding: 0;
     list-style-type: none;
 }
-h1 {
+h1,
+h2,
+h3 {
     margin-bottom: 1.5rem;
+}
+h1 {
     font-size: 2.7rem;
 }
 h2 {
-    margin-bottom: 1.5rem;
     font-size: 2.5rem;
 }
 p {
     font-size: 1.3rem;
     color: #757575;
+}
+.ms_colored-bg {
+    color: white;
 }
 .ms_colored-bg p {
     font-size: 1rem;
@@ -83,8 +89,7 @@ p {
     background-color: #2d64e6;
 }
 .ms_jumbotron {
-    height: 600px;
-    color: white;
+    height: 650px;
 }
 .ms_jumbotron img {
     margin-bottom: 1.5rem;
@@ -92,7 +97,12 @@ p {
 }
 .ms_jumbotron p {
     margin-bottom: 1.5rem;
-    color: white;
+}
+.ms_card-txt {
+    padding: 0.5rem 0;
+}
+.ms_card-txt span {
+    font-size: 0.9rem
 }
 
 /* *HEADER* */
@@ -154,7 +164,7 @@ header {
 /* *FIRST JUMBOTRON* */
 .ms_jumbotron .d-flex {
     padding-bottom: 3rem;
-    height: 600px;
+    height: 650px;
 }
 main > section:first-of-type {
     background-image: url("../img/jumbo-bg.png");
@@ -190,12 +200,9 @@ main > section:first-of-type {
     box-shadow: 0 3px #2d64e6;
     cursor: pointer;
 }
-.ms_card-txt {
+.ms_hardware .ms_card-txt {
     text-align: center;
     display: none;
-}
-.ms_card-txt span {
-    font-size: 0.9rem
 }
 .ms_trade-mark {
     margin-left: -0.15rem;
@@ -203,10 +210,18 @@ main > section:first-of-type {
 }
 
 /* *SECOND JUMBOTRON* */
-main > section:last-of-type {
+main > section:nth-of-type(5) {
     background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
     background-size: cover;
     background-position: center;
+}
+
+/* *NEW GAMES* */
+.ms_new-games {
+    background-color: #1f1f1f;
+}
+.ms_new-games .ms_card-img > img {
+    border-radius: 1.5rem;
 }
 
 /* ?MEDIA QUERIES? */
@@ -225,11 +240,10 @@ main > section:last-of-type {
     .ms_hardware .container-fluid > div:last-of-type .ms_card {
         padding: 0 5%;
     }
-    .ms_card-img {
+    .ms_hardware .ms_card-img {
         padding: 0 1rem;
     }
-    .ms_card-txt {
-        padding: 0.5rem 0;
+    .ms_hardware .ms_card-txt {
         display: block;
     }
 }
@@ -241,8 +255,7 @@ main > section:last-of-type {
         width: 35%;
     }
     .ms_jumbotron img {
-        width: 100%;
-        max-width: 100%;
+        width: 250px;
     }
 }
 
