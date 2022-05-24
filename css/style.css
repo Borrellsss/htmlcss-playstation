@@ -14,7 +14,15 @@ header {
     background-color: blueviolet;
 }
 
+
 /* *COMMON* */
+.ms_container {
+    width: 100%;
+}
+img {
+    width: 100%;
+    display: block;
+}
 a {
     color: inherit;
     text-decoration: none;
@@ -27,6 +35,10 @@ ul {
     padding: 0;
     list-style-type: none;
 }
+h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
 .ms_btn {
     padding: 0.5em 0.8em;
     display: inline-block;
@@ -36,7 +48,26 @@ ul {
     color: white;
     background-color: #363636;
 }
+.ms_btn-orange {
+    color: white;
+    background-color: #cd3d0f;
+}
+.ms_jumbotron {
+    height: 600px;
+    color: white;
+}
+.ms_jumbotron img {
+    margin-bottom: 1.5rem;
+    width: 60%;
+}
+.ms_jumbotron p {
+    margin-bottom: 1.5rem;
+}
+
 /* *HEADER* */
+header {
+}
+
 /* *HEADER TOP* */
 .ms_header-top {
     padding: 0 0.8rem;
@@ -46,10 +77,12 @@ ul {
     background-color: black;
 }
 .ms_header-top img {
+    width: auto;
     height: 15px;
+    display: inline-block;
 }
 
-/* **HEADER BOTTOM* */
+/* *HEADER BOTTOM* */
 .ms_header-bottom {
     padding: 0 0.8rem;
     height: 70px;
@@ -67,13 +100,13 @@ ul {
     cursor: pointer;
 }
 
-/* **HEADER BOTTOM L SIDE* */
+/* *HEADER BOTTOM L SIDE* */
 .ms_hb-l-img,
 .ms_hb-l-menu li {
     margin-right: 1.3rem;
 }
 
-/* **HEADER BOTTOM R SIDE* */
+/* *HEADER BOTTOM R SIDE* */
 .ms_bars-menu {
     font-size: 2rem;
     color: #848484;
@@ -84,4 +117,55 @@ ul {
 .ms_hb-r-menu li,
 .ms_hb-r-lens {
     margin-left: 1.3rem;
+}
+
+/* *MAIN* */
+/* *FIRST JUMBOTRON* */
+.ms_jumbotron .d-flex {
+    padding-bottom: 2rem;
+    height: 600px;
+}
+main > section:first-of-type {
+    background-image: url("../img/jumbo-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* !SECOND JUMBOTRON! */
+/* main > section:last-of-type {
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+} */
+
+
+/* ?MEDIA QUERIES? */
+/* *MD* */
+@media screen and (min-width: 576px) {
+    /* *COMMON* */
+    .ms_container {
+        margin: 0 auto;
+        width: 95%;
+    }
+    .ms_jumbotron img {
+        width: 45%;
+    }
+}
+
+/* *LG* */
+@media screen and (min-width: 992px) {
+    /* *COMMON* */
+    .ms_jumbotron .d-flex {
+        width: 35%;
+    }
+    .ms_jumbotron img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* *XL* */
+@media screen and (min-width: 1200px) {
+    /* *COMMON* */
+    
 }
