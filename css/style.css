@@ -30,7 +30,8 @@ main > section {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-main > section.ms_jumbotron {
+main > section.ms_jumbotron,
+main > section.ms_banner {
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -71,18 +72,21 @@ p {
 .ms_colored-bg {
     color: white;
 }
-.ms_colored-bg p {
-    font-size: 1rem;
-    color: white;
-}
 .ms_btn {
     padding: 0.5em 0.8em;
     display: inline-block;
     border-radius: 3em;
 }
-.ms_btn-grey {
+.ms_btn-dark {
     color: white;
     background-color: #363636;
+}
+.ms_btn-light {
+    color: #2d64e6;
+    background-color: #d9dadc;
+}
+a.ms_btn-light:hover {
+    color: #2d64e6;
 }
 .ms_btn-orange {
     color: white;
@@ -99,8 +103,26 @@ p {
     margin-bottom: 1.5rem;
     width: 60%;
 }
-.ms_jumbotron p {
+.ms_colored-bg p,
+.ms_jumbotron p,
+.ms_banner p {
     margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: white;
+}
+.ms_banner .ms_card-left {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.ms_banner .ms_card-right img {
+    width: 100%;
+}
+.ms_banner p {
+    font-size: 1rem;
+}
+.ms_banner-logo {
+    margin-bottom: 1.5rem;
+    width: 65%;
 }
 .ms_card-txt {
     padding: 0.5rem 0;
@@ -233,6 +255,14 @@ main > section:nth-of-type(5) {
     border-radius: 1.5rem;
 }
 
+/* *FIRST BANNER* */
+.ms_plus {
+    background-color: #bebcbb;
+}
+.ms_plus p {
+    color: #1f1f1f;
+}
+
 /* ?MEDIA QUERIES? */
 /* *MD* */
 @media screen and (min-width: 768px) {
@@ -243,6 +273,10 @@ main > section:nth-of-type(5) {
     }
     .ms_jumbotron img {
         width: 45%;
+    }
+    .ms_banner .ms_card-left {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     /* *HARDWARE* */
