@@ -13,7 +13,7 @@ header {
 .ms_btn {
     background-color: blueviolet;
 }
-section:nth-child(2) {
+section:nth-child(3) {
     background-color: aqua;
 }
 
@@ -42,9 +42,21 @@ ul {
     padding: 0;
     list-style-type: none;
 }
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2.7rem;
+}
 h2 {
     margin-bottom: 1.5rem;
     font-size: 2.5rem;
+}
+p {
+    font-size: 1.3rem;
+    color: #757575;
+}
+.ms_colored-bg p {
+    font-size: 1rem;
+    color: white;
 }
 .ms_btn {
     padding: 0.5em 0.8em;
@@ -152,6 +164,15 @@ main > section:first-of-type {
 .ms_main-games img:hover {
     outline: 3px solid #0070d1;
     outline-offset: 3px;
+}
+
+/* *MAIN TITLE* */
+.ms_main-title {
+    text-align: center;
+}
+.ms_mt-motto {
+    color: #0070d1;
+    text-transform: uppercase;
 }
 
 /* ?MEDIA QUERIES? */
