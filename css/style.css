@@ -2,7 +2,86 @@
 body {
     font-family: Arial, sans-serif;
 }
-
 header {
     font-family: Helvetica, arial, sans-serif;
+}
+
+/* !DEBUG! */
+.ms_header-bottom {
+    background-color: coral;
+}
+.ms_btn {
+    background-color: blueviolet;
+}
+
+/* *COMMON* */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    color: #0070d1;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.ms_btn {
+    padding: 0.5em 0.8em;
+    display: inline-block;
+    border-radius: 3em;
+}
+.ms_btn-grey {
+    color: white;
+    background-color: #363636;
+}
+/* *HEADER* */
+/* *HEADER TOP* */
+.ms_header-top {
+    padding: 0 0.8rem;
+    height: 35px;
+    text-align: right;
+    line-height: 35px;
+    background-color: black;
+}
+.ms_header-top img {
+    height: 15px;
+}
+
+/* **HEADER BOTTOM* */
+.ms_header-bottom {
+    padding: 0 0.8rem;
+    height: 70px;
+}
+.ms_header-bottom .d-flex {
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+.ms_hb-l-menu img,
+.ms_hb-r-menu img {
+    margin-left: 0.2rem;
+    width: 0.7rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* **HEADER BOTTOM L SIDE* */
+.ms_hb-l-img,
+.ms_hb-l-menu li {
+    margin-right: 1.3rem;
+}
+
+/* **HEADER BOTTOM R SIDE* */
+.ms_bars-menu {
+    font-size: 2rem;
+    color: #848484;
+}
+.ms_hb-r-menu .ms_hb-r-lens {
+    width: 1.5rem;
+}
+.ms_hb-r-menu li,
+.ms_hb-r-lens {
+    margin-left: 1.3rem;
 }
