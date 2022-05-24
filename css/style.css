@@ -22,9 +22,13 @@ section:nth-child(5) {
 .ms_container {
     width: 100%;
 }
-section:not(section:first-of-type) {
+main > section {
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+main > section.ms_jumbotron {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 img {
     width: 100%;
@@ -88,6 +92,7 @@ p {
 }
 .ms_jumbotron p {
     margin-bottom: 1.5rem;
+    color: white;
 }
 
 /* *HEADER* */
@@ -157,13 +162,6 @@ main > section:first-of-type {
     background-position: center;
 }
 
-/* !SECOND JUMBOTRON! */
-/* main > section:last-of-type {
-    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
-    background-size: cover;
-    background-position: center;
-} */
-
 /* *MAIN GAMES* */
 .ms_main-games img {
     border-radius: 1.15rem;
@@ -202,6 +200,13 @@ main > section:first-of-type {
 .ms_trade-mark {
     margin-left: -0.15rem;
     vertical-align: top;
+}
+
+/* *SECOND JUMBOTRON* */
+main > section:last-of-type {
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 /* ?MEDIA QUERIES? */
