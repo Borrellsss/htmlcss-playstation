@@ -96,6 +96,13 @@ a.ms_btn-light:hover {
     color: white;
     background-color: #2d64e6;
 }
+.ms_btn-white {
+    color: black;
+    background-color: white;
+}
+a.ms_btn-white:hover {
+    color: black;
+}
 .ms_jumbotron {
     height: 650px;
 }
@@ -140,6 +147,7 @@ a.ms_btn-light:hover {
     margin-left: -0.5em;
     font-size: 0.55em;
 }
+
 /* *HEADER* */
 header {
 }
@@ -255,12 +263,35 @@ main > section:nth-of-type(5) {
     border-radius: 1.5rem;
 }
 
+/* *EXPLORE PS4* */
+.ms_explore .ms_small-container p {
+    margin-bottom: 2.5rem;
+}
+
 /* *FIRST BANNER* */
 .ms_plus {
     background-color: #bebcbb;
 }
 .ms_plus p {
     color: #1f1f1f;
+}
+
+/* *DISCOUNT* */
+.ms_discount .text-center p {
+    margin-bottom: 3rem;
+}
+
+/* *SECOND BANNER* */
+.ms_now {
+    background-color: #161c3b;
+}
+
+/* *SOCIALS* */
+.ms_socials .col > img {
+    border-radius: 1.5rem;
+}
+.ms_socials .col > img:hover {
+    box-shadow: 0 0 5px grey;
 }
 
 /* ?MEDIA QUERIES? */
@@ -299,6 +330,10 @@ main > section:nth-of-type(5) {
     }
     .ms_jumbotron img {
         width: 250px;
+    }
+    .ms_banner .ms_card-right img {
+        margin: 0 auto;
+        max-width: 550px;
     }
 }
 
