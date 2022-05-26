@@ -36,6 +36,7 @@ a:hover {
 }
 a.ms_btn:hover {
     color: white;
+    transition: all 0.15s ease-in-out;
 }
 ul {
     margin: 0;
@@ -69,24 +70,43 @@ p {
     color: white;
     background-color: #363636;
 }
+.ms_btn-dark:hover {
+    outline: 2px solid white;
+    outline-offset: -4px;
+}
 .ms_btn-light {
     color: #2d64e6;
     background-color: #d9dadc;
 }
 a.ms_btn-light:hover {
     color: #2d64e6;
+    outline: 2px solid #2d64e6;
+    outline-offset: -4px;
 }
 .ms_btn-orange {
     color: white;
     background-color: #cd3d0f;
 }
+.ms_btn-orange:hover {
+    outline: 2px solid black;
+    outline-offset: -4px;
+}
 .ms_btn-blue {
     color: white;
     background-color: #2d64e6;
 }
+.ms_btn-blue:hover {
+    box-shadow: 0 0 0 4px black inset;
+    outline: 2px solid white;
+    outline-offset: -4px;
+}
 .ms_btn-white {
     color: black;
     background-color: white;
+}
+.ms_btn-white:hover {
+    outline: 2px solid black;
+    outline-offset: -4px;
 }
 a.ms_btn-white:hover {
     color: black;
@@ -218,9 +238,11 @@ main > section:first-of-type {
 .ms_main-games img {
     border-radius: 1.15rem;
 }
-.ms_main-games img:hover {
+.ms_main-games .col:hover img {
     outline: 3px solid #2d64e6;
     outline-offset: 3px;
+    transform: translateY(-20%);
+    transition: all 0.35s ease;
 }
 
 /* *MAIN TITLE* */
