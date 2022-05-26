@@ -98,7 +98,7 @@ a.ms_btn-light:hover {
 .ms_btn-blue:hover {
     box-shadow: 0 0 0 4px black inset;
     outline: 2px solid white;
-    outline-offset: -4px;
+    outline-offset: -3px;
 }
 .ms_btn-white {
     color: black;
