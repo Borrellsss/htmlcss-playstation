@@ -161,38 +161,69 @@ header {
 }
 
 /* *HEADER BOTTOM* */
-.navbar.navbar-expand-lg.navbar-light.bg-light {
+.ms_header-bottom {
+    position: relative;
+}
+.dropdown,
+.dropend,
+.dropstart,
+.dropup {
+    position: static;
+}
+.navbar {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     background-color: white;
 }
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #2d64e6;
+}
 .navbar-expand-lg .navbar-nav .dropdown-menu {
-    position: fixed;
+    position: absolute;
     left: 0;
-    top: 100px;
+    top: 100%;
     width: 100%;
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
 }
  li {
     margin-left: 0;
 }
-/* .ms_header-bottom {
-    padding: 0 0.8rem;
-    height: 70px;
-    background-color: white;
-} */
-/* .ms_header-bottom .d-flex {
-    height: 70px;
-    justify-content: space-between;
-    align-items: center;
+.ms_icons-menu {
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
-.ms_hb-l-menu img,
-.ms_hb-r-menu img {
-    margin-left: 0.2rem;
-    width: 0.7rem;
-    display: inline-block;
-    cursor: pointer;
-} */
+.dropdown-item{
+    padding: 0;
+}
+.dropdown-item:hover {
+    color: #2d64e6;
+    background-color: white;
+}
+.dropdown-item:hover img {
+    outline: 3px solid #2d64e6;
+    outline-offset: 5px;
+    border-radius: 0.5rem;
+}
+.ms_play-icon {
+    width: 5rem;
+}
+.dropdown-divider {
+    margin: 0;
+}
+.ms_sub-drop-menu {
+    padding: 0.5rem 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
 
 /* *HEADER BOTTOM L SIDE* */
 .ms_hb-l-img {
@@ -200,16 +231,21 @@ header {
 }
 .ms_hb-l-img,
 .ms_hb-l-menu li {
-    margin-right: 0.5rem;
+    margin-right: 0.8rem;
 }
 
 /* *HEADER BOTTOM R SIDE* */
 .ms_hb-r-lens {
     width: 1.5rem;
 }
-.ms_hb-r-menu li,
-.ms_hb-r-lens {
-    margin-left: 0.5rem;
+.ms_hb-r-menu ul {
+    width: 100%;
+}
+.ms_hb-r-menu li {
+    margin-right: 0.8rem;
+}
+.ms_hb-r-menu li:last-of-type {
+    margin-right: 0;
 }
 .ms_hb-r-menu .dropdown-menu li {
     margin-left: 0;
@@ -404,5 +440,15 @@ footer {
     .ms_banner .ms_card-right img {
         margin: 0 auto;
         max-width: 550px;
+    }
+}
+
+/* ? MEDIA BONUS ? */
+@media screen and (max-width: 992px) {
+    .dropdown,
+    .dropend,
+    .dropstart,
+    .dropup {
+        position: relative;
     }
 }
