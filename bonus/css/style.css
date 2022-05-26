@@ -1,0 +1,408 @@
+/* *FONTS RESET* */
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    font-family: Helvetica, arial, sans-serif;
+}
+
+/* *COMMON* */
+.ms_container {
+    width: 100%;
+}
+.ms_small-container {
+    margin: 0 auto;
+    max-width: 540px;
+}
+main > section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+main > section.ms_jumbotron,
+main > section.ms_banner {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+img {
+    width: 100%;
+    display: block;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    color: #2d64e6;
+}
+a.ms_btn:hover {
+    color: white;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+h1,
+h2,
+h3 {
+    margin-bottom: 1.5rem;
+}
+h1 {
+    font-size: 2.7rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+p {
+    font-size: 1.3rem;
+    color: #757575;
+}
+.ms_colored-bg {
+    color: white;
+}
+.ms_btn {
+    padding: 0.5em 0.8em;
+    display: inline-block;
+    border-radius: 3em;
+}
+.ms_btn-dark {
+    color: white;
+    background-color: #363636;
+}
+.ms_btn-light {
+    color: #2d64e6;
+    background-color: #d9dadc;
+}
+a.ms_btn-light:hover {
+    color: #2d64e6;
+}
+.ms_btn-orange {
+    color: white;
+    background-color: #cd3d0f;
+}
+.ms_btn-blue {
+    color: white;
+    background-color: #2d64e6;
+}
+.ms_btn-white {
+    color: black;
+    background-color: white;
+}
+a.ms_btn-white:hover {
+    color: black;
+}
+.ms_jumbotron {
+    height: 650px;
+}
+.ms_jumbotron img {
+    margin-bottom: 1.5rem;
+    width: 60%;
+}
+.ms_colored-bg p,
+.ms_jumbotron p,
+.ms_banner p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: white;
+}
+.ms_banner .ms_card-left {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.ms_banner .ms_card-right img {
+    width: 100%;
+}
+.ms_banner p {
+    font-size: 1rem;
+}
+.ms_banner-logo {
+    margin-bottom: 1.5rem;
+    width: 65%;
+}
+.ms_card-txt {
+    padding: 0.5rem 0;
+}
+.ms_card-txt span {
+    font-size: 0.9rem
+}
+.ms_marks {
+    vertical-align: top;
+}
+.ms_trade-mark {
+    margin-left: -0.15rem;
+}
+.ms_registered-mark {
+    margin-left: -0.5em;
+    font-size: 0.55em;
+}
+
+/* *HEADER* */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    box-shadow: 0 0 4px grey;
+}
+
+/* *HEADER TOP* */
+.ms_header-top {
+    padding: 0 0.8rem;
+    height: 35px;
+    text-align: right;
+    line-height: 35px;
+    background-color: black;
+}
+.ms_header-top img {
+    width: auto;
+    height: 15px;
+    display: inline-block;
+}
+
+/* *HEADER BOTTOM* */
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background-color: white;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: fixed;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    margin-top: 0;
+}
+ li {
+    margin-left: 0;
+}
+/* .ms_header-bottom {
+    padding: 0 0.8rem;
+    height: 70px;
+    background-color: white;
+} */
+/* .ms_header-bottom .d-flex {
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+.ms_hb-l-menu img,
+.ms_hb-r-menu img {
+    margin-left: 0.2rem;
+    width: 0.7rem;
+    display: inline-block;
+    cursor: pointer;
+} */
+
+/* *HEADER BOTTOM L SIDE* */
+.ms_hb-l-img {
+    width: 40px;
+}
+.ms_hb-l-img,
+.ms_hb-l-menu li {
+    margin-right: 0.5rem;
+}
+
+/* *HEADER BOTTOM R SIDE* */
+.ms_hb-r-lens {
+    width: 1.5rem;
+}
+.ms_hb-r-menu li,
+.ms_hb-r-lens {
+    margin-left: 0.5rem;
+}
+.ms_hb-r-menu .dropdown-menu li {
+    margin-left: 0;
+}
+
+/* *MAIN* */
+main {
+    margin-top: 101px;
+}
+
+/* *FIRST JUMBOTRON* */
+.ms_jumbotron .d-flex {
+    padding-bottom: 3rem;
+    height: 650px;
+}
+main > section:first-of-type {
+    background-image: url("../img/jumbo-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* *MAIN GAMES* */
+.ms_main-games img {
+    border-radius: 1.15rem;
+}
+.ms_main-games img:hover {
+    outline: 3px solid #2d64e6;
+    outline-offset: 3px;
+}
+
+/* *MAIN TITLE* */
+.ms_main-title {
+    text-align: center;
+}
+.ms_mt-motto {
+    color: #2d64e6;
+    text-transform: uppercase;
+}
+
+/* *HARDWARE* */
+.ms_hardware .container-fluid > div:last-of-type .ms_card {
+    height: 100%;
+    opacity: 0.5;
+}
+.ms_hardware .container-fluid > div:last-of-type .ms_card:hover {
+    opacity: 1;
+    box-shadow: 0 4px #2d64e6;
+    cursor: pointer;
+}
+.ms_hardware .ms_card-txt {
+    text-align: center;
+    display: none;
+}
+
+/* *SECOND JUMBOTRON* */
+main > section:nth-of-type(5) {
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* *NEW GAMES* */
+.ms_new-games {
+    background-color: #1f1f1f;
+}
+.ms_new-games .ms_card-img > img {
+    border-radius: 1.5rem;
+}
+
+/* *EXPLORE PS4* */
+.ms_explore .ms_small-container p {
+    margin-bottom: 2.5rem;
+}
+
+/* *FIRST BANNER* */
+.ms_plus {
+    background-color: #bebcbb;
+}
+.ms_plus p {
+    color: #1f1f1f;
+}
+
+/* *DISCOUNT* */
+.ms_discount .text-center p {
+    margin-bottom: 3rem;
+}
+
+/* *SECOND BANNER* */
+.ms_now {
+    background-color: #161c3b;
+}
+
+/* *SOCIALS* */
+.ms_socials .col > a > img {
+    border-radius: 1.5rem;
+}
+.ms_socials .col > a:hover > img {
+    box-shadow: 0 0 5px grey;
+}
+
+/* *FOOTER* */
+footer {
+    padding: 4rem 0;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #00439c;
+}
+
+/* *FOOTER TOP* */
+.ms_footer-top-l-logo {
+    margin-bottom: 1.5rem;
+    width: 100px;
+}
+.ms_footer-top-language * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.ms_footer-top-language img {
+    margin-right: 0.4rem;
+    width: 1.3rem;
+}
+.ms_footer-top ul > li {
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+}
+.ms_footer-top ul > li > a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+/* *FOOTER BOTTOM* */
+.ms_footer-bottom {
+    margin-top: 2rem;
+}
+.ms_footer-bottom-logo {
+    margin-bottom: 1rem;
+    width: 150px;
+}
+.ms_footer-bottom-txt p {
+    color: white;
+    font-size: 0.9rem;
+}
+.ms_footer-bottom-txt p a {
+    text-decoration: underline;
+}
+.ms_footer-bottom-txt p a:hover {
+    color: white;
+}
+
+/* ?MEDIA QUERIES? */
+/* *MD* */
+@media screen and (min-width: 768px) {
+    /* *COMMON* */
+    .ms_container {
+        margin: 0 auto;
+        width: 95%;
+    }
+    .ms_jumbotron img {
+        width: 45%;
+    }
+    .ms_banner .ms_card-left {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    /* *HARDWARE* */
+    .ms_hardware .container-fluid > div:last-of-type .ms_card {
+        padding: 0 5%;
+    }
+    .ms_hardware .ms_card-img {
+        padding: 0 1rem;
+    }
+    .ms_hardware .ms_card-txt {
+        display: block;
+    }
+
+    /* *FOOTER TOP* */
+    .ms_footer-top ul > li {
+        margin-left: 0;
+    }
+}
+
+/* *LG* */
+@media screen and (min-width: 992px) {
+    /* *COMMON* */
+    .ms_jumbotron .d-flex {
+        width: 35%;
+    }
+    .ms_jumbotron img {
+        width: 250px;
+    }
+    .ms_banner .ms_card-right img {
+        margin: 0 auto;
+        max-width: 550px;
+    }
+}
